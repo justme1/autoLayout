@@ -14,7 +14,35 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bOU-rn-R9F">
+                    <rect key="frame" x="25" y="51" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="KTk-hK-GAU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0u-7W-O3h">
+                    <rect key="frame" x="105" y="57" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6pr-F7-31h">
+                    <rect key="frame" x="244" y="57" width="20" height="20"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" red="0.85098046059999999" green="0.28837819339999998" blue="0.95686280729999995" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="bOU-rn-R9F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="51" id="AOU-Jn-Xok"/>
+                <constraint firstItem="Q0u-7W-O3h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="57" id="C6e-BK-cx7"/>
+                <constraint firstItem="6pr-F7-31h" firstAttribute="centerY" secondItem="Q0u-7W-O3h" secondAttribute="centerY" id="D4P-8j-bC8"/>
+                <constraint firstItem="Q0u-7W-O3h" firstAttribute="leading" secondItem="bOU-rn-R9F" secondAttribute="trailing" constant="45" id="HBw-RY-2iP"/>
+                <constraint firstAttribute="bottom" secondItem="bOU-rn-R9F" secondAttribute="bottom" constant="14" id="TJE-EN-oHV"/>
+                <constraint firstItem="6pr-F7-31h" firstAttribute="leading" secondItem="Q0u-7W-O3h" secondAttribute="trailing" constant="97" id="iHh-6Q-QUD"/>
+                <constraint firstItem="6pr-F7-31h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="57" id="jB2-7O-QIO"/>
+                <constraint firstAttribute="trailing" secondItem="6pr-F7-31h" secondAttribute="trailing" constant="56" id="kFC-zD-EkJ"/>
+                <constraint firstItem="bOU-rn-R9F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="rTp-wo-jE6"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>

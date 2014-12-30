@@ -21,10 +21,10 @@
     [self.aVC.view autoSetDimension:ALDimensionHeight toSize:100];
     [self.aVC.view autoSetDimension:ALDimensionWidth toSize:320];
     NSLayoutConstraint *constraint = [self.aVC.view autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:-100];
-    [self.view layoutIfNeeded];
+    [self.aVC.view layoutIfNeeded];
     [UIView animateWithDuration:2 animations:^{
         constraint.constant = -25;
-        [self.view layoutIfNeeded];
+        [self.aVC.view layoutIfNeeded];
     }];
     
 }
